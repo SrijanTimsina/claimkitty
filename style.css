@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@700&family=Roboto&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body .button {
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+body .wrapper {
+  max-width: 750px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #f093c3;
+}
+
+header .header-content {
+  height: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .icon-container {
+  background-color: #e4a5cf;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .icon-container .icon {
+  height: 30px;
+  margin: 0 7px;
+}
+
+header .icon-container .icon img {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+header .logo {
+  text-align: center;
+}
+
+header .connect-btn {
+  border: 3px solid white;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 799px) {
+  header .icon-container {
+    display: none;
+  }
+}
+
+main {
+  background-image: url(images/bg.png);
+  background-size: 500px;
+  background-repeat: repeat;
+}
+
+main .bgwh-bdrpr {
+  background-color: white;
+  border: 4px solid #f093c3;
+  border-radius: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .section1 {
+  min-height: calc(100vh - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .section1 .main-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .section1 .main-section img {
+  height: 400px;
+}
+
+main .section1 .main-section h1 {
+  font-size: 56px;
+}
+
+main .section1 .main-section h4 {
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 799px) {
+  main .section1 .main-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  main .section1 .main-section h1 {
+    font-size: 40px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  main .section1 .main-section h4 {
+    font-size: 15px;
+    padding: 0 0 10px 0;
+  }
+  main .section1 .main-section img {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 799px) and (max-width: 799px) {
+  main .section1 .main-section .main-content {
+    max-width: 400px;
+  }
+}
+
+main .section1 .main-buttons {
+  margin-bottom: 20px;
+}
+
+main .section1 .main-buttons .button {
+  border: none;
+  font-weight: bolder;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+@media screen and (max-width: 799px) {
+  main .section1 .main-buttons .button {
+    padding: 20px;
+  }
+}
+
+main .section1 .main-buttons .btn-app {
+  background-color: #f093c3;
+  color: white;
+  margin-right: 20px;
+}
+
+main .section1 .main-buttons .btn-analytics {
+  -webkit-box-shadow: inset 0px 0px 0px 4px #f093c3;
+          box-shadow: inset 0px 0px 0px 4px #f093c3;
+  background-color: white;
+  color: #f093c3 !important;
+}
+
+main .main-info {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 50px;
+}
+
+main .main-info .information {
+  text-align: center;
+}
+
+@media screen and (max-width: 799px) {
+  main .main-info {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    grid-gap: 30px;
+    max-width: 300px;
+  }
+  main .main-info p {
+    font-size: 10px;
+  }
+}
+
+main .analytics {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+main .analytics .heading {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+main .analytics .token-information {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .analytics .token-information .last-kitties,
+main .analytics .token-information .top-tokens {
+  max-height: 190px;
+  overflow-y: auto;
+}
+
+main .analytics .token-information .top-token,
+main .analytics .token-information .kitties-information {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+main .analytics .token-information .top-token .token-id,
+main .analytics .token-information .kitties-information .token-id {
+  text-decoration: underline;
+}
+
+main .analytics .token-information .top-token .small,
+main .analytics .token-information .kitties-information .small {
+  font-size: 8px;
+}
+
+main .analytics .token-information .kitties-information {
+  width: 410px;
+}
+
+main .analytics .token-information .top-token {
+  width: 260px;
+}
+
+main .analytics .airdrop-search .airdrop-address {
+  padding: 20px 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+main .analytics .airdrop-search .airdrop-address p {
+  width: 100%;
+  text-align: center;
+  color: gray;
+}
+
+main .analytics .airdrop-search .airdrop-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .analytics .airdrop-search button {
+  background-color: #f093c3;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 799px) {
+  main .analytics {
+    max-width: 360px;
+    margin: auto;
+  }
+  main .analytics .token-information {
+    display: block;
+  }
+  main .analytics .token-information .kitties-information,
+  main .analytics .token-information .top-token {
+    width: 100%;
+  }
+  main .analytics h2 {
+    margin: 20px 0;
+  }
+  main .analytics .last-kitties .start-date {
+    display: none;
+  }
+  main .analytics .main-info {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "one two" "five five" "three four";
+  }
+  main .analytics .main-info .one {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: one;
+  }
+  main .analytics .main-info .two {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: two;
+  }
+  main .analytics .main-info .three {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: three;
+  }
+  main .analytics .main-info .four {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: four;
+  }
+  main .analytics .main-info .five {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: five;
+  }
+}
+
+main .show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #f093c3;
+  padding: 10px 0;
+}
+
+footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer .footer-content img {
+  height: 50px;
+}
+
+footer .footer-content .sitemap,
+footer .footer-content .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
