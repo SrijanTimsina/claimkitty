@@ -52,7 +52,6 @@ header .header-content {
 }
 
 header .icon-container {
-  background-color: #e4a5cf;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,27 +308,25 @@ main .analytics .token-information .kitties-information .small {
   font-size: 8px;
 }
 
-main .analytics .token-information .kitties-information {
-  width: 410px;
-}
-
-main .analytics .token-information .top-token {
-  width: 260px;
+@media screen and (min-width: 799px) {
+  main .analytics .token-information .last-kitties {
+    width: 400px;
+  }
+  main .analytics .token-information .kitties-information {
+    width: 384px;
+  }
+  main .analytics .token-information .top-tokens {
+    width: 276px;
+    overflow: auto;
+  }
+  main .analytics .token-information .top-token {
+    width: 260px;
+  }
 }
 
 main .analytics .airdrop-search .airdrop-address {
-  padding: 20px 0;
+  padding: 10px 0;
   width: 100%;
-  margin-bottom: 10px;
-}
-
-main .analytics .airdrop-search .airdrop-address p {
-  width: 100%;
-  text-align: center;
-  color: gray;
-}
-
-main .analytics .airdrop-search .airdrop-add {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,13 +342,23 @@ main .analytics .airdrop-search .airdrop-add {
           align-items: center;
 }
 
+main .analytics .airdrop-search .airdrop-address input {
+  width: 100%;
+  text-align: center;
+  color: gray;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  outline: none;
+  padding: 15px 0;
+}
+
 main .analytics .airdrop-search button {
   background-color: #f093c3;
   color: white;
   border: none;
   padding: 20px 40px;
   font-weight: bolder;
-  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 799px) {
@@ -403,6 +410,20 @@ main .analytics .airdrop-search button {
     -ms-grid-column-span: 2;
     grid-area: five;
   }
+  main .analytics .last-kitties {
+    max-width: 100%;
+    overflow: auto;
+  }
+  main .analytics .kitties-information {
+    max-width: calc(100% - 10px);
+  }
+  main .analytics .top-tokens {
+    max-width: 100%;
+    overflow: auto;
+  }
+  main .analytics .top-token {
+    max-width: calc(100% - 10px);
+  }
 }
 
 main .show {
@@ -427,7 +448,6 @@ footer .footer-content {
           justify-content: space-between;
   color: white;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 footer .footer-content img {
